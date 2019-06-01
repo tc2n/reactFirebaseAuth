@@ -5,9 +5,110 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 62.5%;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --color-gray: #eee;
+  --color-light-black: #111;
+  --color-light-blue: rgb(0, 38, 255);
+}
+
+.main {
+  background-color: var(--color-gray);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 0.5rem rgba(0,0,0, 0.3);
+}
+
+
+
+.nav_list {
+  list-style: none;
+  font-size: 1rem;
+  text-align: center;
+}
+.nav_list > li {
+  padding: 0.1rem;
+}
+.nav_list li a, a:active {
+  text-decoration: none;
+  color: var(--color-light-black);
+  transition: all 0.2s;
+}
+.nav_list li a:hover {
+  color: var(--color-light-blue);
+}
+.form > input, input:focus {
+  display: block;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: solid 1px var(--color-light-black);
+  margin: 0.2rem auto;
+  transition: background-color 0.2s;
+}
+.form > input:hover {
+  background-color: rgba(203, 212, 212, 0.1);
+}
+
+.form button, button:active {
+  border: solid 1px var(--color-light-black);
+  padding: 0.3rem;
+  margin: 0.2rem auto;
+  display: block;
+  border-radius: 0.2rem;
+  color: var(--color-light-black);
+}
+
+.form button:disabled {
+  background-color: rgba(255, 0, 0, 0.541);
+}
+
+.passForg {
+  text-align: center;
+}
+.passForg a{
+  text-decoration: none;
+  color: var(--color-light-black);
+  font-size: 0.7rem;
+}
+
+.signuplink {
+  text-align: center;
+  text-align: 0.7rem;
+}
+.signuplink a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home p{
+  font-size: 1rem;
+}
+
+.signoutbutton {
+  border: solid 1px var(--color-light-black);
+  padding: 0.3rem;
+  margin: 0.2rem auto;
+  display: block;
+  border-radius: 0.2rem;
+  color: var(--color-light-black);
+}
+.account span {
+  color: var(--color-light-black);
+  transition: color 0.3s;
+}
+.account span:hover {
+  color: rgba(255, 0, 0, 0.692);
 }
